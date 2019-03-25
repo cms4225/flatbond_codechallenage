@@ -54,7 +54,7 @@ class Home extends React.Component {
     }
     this.setState({
       rent: value,
-      membershipFee: fee
+      membershipFee: fee.toFixed(2)
     });
   }
 
@@ -178,6 +178,7 @@ class Home extends React.Component {
       return <Redirect to={{
         pathname: '/show',
         rent: this.state.rent,
+        rentFrequency: this.state.period,
         membershipfee: this.state.membershipFee,
         postcode: this.state.postCode,
       }}
@@ -187,13 +188,13 @@ class Home extends React.Component {
     const btnPeriods =
       <Radio.Group defaultValue="week" onChange={this.handleRentPeriods}>
         <Radio.Button value="week">
-          week 
+          Weekly 
           <Tooltip title={`The week's rent should be between £${rentRange.week.min} and £${rentRange.week.max}`}>
             <Icon type="info-circle-o" />
           </Tooltip>
         </Radio.Button>
         <Radio.Button value="month">
-          month 
+          Monthly 
           <Tooltip title={`The month's rent should be between £${rentRange.month.min} and £${rentRange.month.max}`}>
             <Icon type="info-circle-o" />
           </Tooltip>

@@ -57,6 +57,11 @@ class ShowFlatbond extends React.Component {
             >
               £{this.props.location.rent}
             </Form.Item>
+            <Form.Item {...formItemLayout}
+              label="Rent Frequency"
+            >
+              {this.props.location.rentFrequency}
+            </Form.Item>
             <FormItem label="Membership fee" {...formItemLayout}>
               £{this.props.location.membershipfee}
             </FormItem>
