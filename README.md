@@ -19,8 +19,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 ReactJS, Mobx, Axios, Antdesign
 
 ### Known Issue
-1. Optimization get/ post and data binding function: Use observeable, stores.
-2. Clean up membership's fee when the rent field had clear.
+1. Optimization get/ post and data binding function: Use observable and stores.
+2. Clean up membership's fee field when the rent's field had clean.
 3. Check postcode format.
 4. Optimization variable architecture which week, month, and rent range.
 
